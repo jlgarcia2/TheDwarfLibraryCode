@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/administrator.css">
+    <title>The Dwarf Library Main Page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="welcomeTitle">The Dwarf Library</h1>
+        </div>
+        <div style="height: 50px; font-size: x-large;"class="head">
+            <a href="index.html">Home</a>
+         </div>
+    </header>
+    <div class="mainText">
+        <div class ="mainTextHeader">
+            <h1>Administrator Portal</h1>
+        </div>
+    </div>
+    <div style="height: 20px;"></div>
+    <div class="settings">
+        <div class="deleting">
+            <h1>Entry Deletor</h1>
+            <form method="POST" action="/delete">
+                <input id="BookIDdel" name="deleteID" placeholder="BookID">
+                <button id="deleteButton" type="submit">Delete</button>
+            </form>
+        </div>
+        <div class ="editing">
+            <h1>Entry Editor</h1>
+            <form method="POST" action="/edit">
+                <input id="BookIDedit" name="ID" placeholder="BookID">
+                <div style="height: 50px"></div>
+                <input id="BookTitleEdit" name="title" placeholder="New Book Title">
+                <input id="BookAuthorEdit" name="author" placeholder="New Book Author">
+                <input id="BookPublisherEdit" name="publisher" placeholder="New Book Publisher">
+                <input id="BookYearEdit" name="year" placeholder="New Book Date">
+                <button id="editButton" type="submit">Edit</button>
+            </form>
+        </div>
+        <div style="height: 100px;"></div>
+    </div>
+    <div class="response">
+        <% var data %>
+        <p><%=data%></p>
+    </div>
+</body>
+<footer>
+    <p>2023 &#169; Jorge Garcia</p>
+</footer> 
+</html>

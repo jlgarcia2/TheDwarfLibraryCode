@@ -1,0 +1,30 @@
+
+
+body{
+    background-image: url("../images/patryk-stefaniak-dwarffortress-01-a.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size:100%
+}
+
+.mainText,.response, header {
+    text-align: center;
+    color: white;
+    
+}
+.mainText{
+    border-bottom: 5px solid black;
+
+}
+.settings{
+    text-align: center;
+    color: white;
+    padding: 70px;
+
+}
+footer{
+    color: white;
+    font-family: system-ui;
+    text-align: center;
+}
